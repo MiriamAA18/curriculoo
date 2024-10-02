@@ -1,0 +1,104 @@
+/* Estilos globales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #fac8a0;
+    color: #af601a;;
+
+    margin: 20px;
+}
+
+header {
+    background-color: #af601a96;
+    color: #ebebeb(248, 5, 5);
+    text-align: center;
+    padding: 20px 0;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+/* Estilo para la imagen debajo del título */
+.main-image {
+    width: 120px; /* Ajusta el tamaño de la imagen */
+    display:block ;
+    
+    margin: 0 auto;
+}
+
+/* Contenedor principal para las pestañas y el contenido */
+.container {
+    display: flex;
+}
+
+/* Estilos para las pestañas en vertical */
+.tabs {
+    display: flex;
+    flex-direction: column;  /* Pestañas en columna */
+    width: 200px;            /* Ancho de la barra lateral */
+    background-color: #af601a96;
+    padding: 20px;
+}
+
+.tab-link {
+    background: none;  /* Elimina el fondo */
+    border: none;      /* Elimina el borde */
+    color: #ffffff;       /* Color del texto */
+    font-size: 20px;   /* Tamaño del texto */
+    cursor: pointer;   /* El puntero indica que es clicable */
+    padding: 10px 0;
+    text-align: left;  /* Alineación del texto a la izquierda */
+    text-decoration: none;  /* Elimina subrayado en texto */
+}
+
+.tab-link:hover {
+    color: #af601a;  /* Cambia el color al pasar el mouse */
+}
+
+/* Ocultar y mostrar contenido de pestañas */
+.tab-content {
+    display: none; /* Oculto por defecto */
+    padding: 20px;
+    background-color: #e59866(252, 10, 10);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    flex-grow: 1;
+}
+
+.tab-content.active {
+    display: block; /* Se muestra cuando es activo */
+}
+
+/* Estilo para el botón de regresar */
+.back-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: none;
+    cursor: pointer;
+}
+
+.back-button:hover {
+    background-color: #af601a;
+}
+
+/* Ocultar las pestañas cuando se muestra el contenido */
+.tabs.hidden {
+    display: none;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.8em;
+}
